@@ -1,0 +1,290 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #ffe6f2; /* Light pink background */
+  color: #5b004b; /* Deep purple text for overall theme */
+}
+
+.song {
+  visibility: hidden;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  width: 100vw;
+  background-color: #ffcce5; /* Soft pink container background */
+}
+
+.container > div {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 20vh;
+}
+
+.one {
+  font-size: 4.5rem;
+  color: #4a004f; /* Deep plum text */
+}
+
+.two {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #6b004f; /* Rich deep pink */
+}
+
+.three {
+  font-size: 3rem;
+  color: #800060; /* Purple text */
+}
+
+.four .text-box {
+  border: 3px solid #ff99cc; /* Pink border */
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+  background-color: #ffe6f2; /* Light pink box background */
+}
+
+.text-box p {
+  margin: 0;
+  text-align: left;
+  color: #800060; /* Purple text */
+}
+
+.text-box span {
+  visibility: hidden;
+}
+
+.text-box .fake-btn {
+  background-color: #ff69b4; /* Vibrant pink button */
+  border-radius: 3px;
+  bottom: -50px;
+  color: #ffffff; /* White button text */
+  padding: 0.5rem 1rem;
+  position: absolute;
+  right: 5px;
+}
+
+.five p {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  color: #6b004f; /* Rich deep pink */
+}
+
+.idea-3 strong {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px 5px;
+  background-color: #ff99cc; /* Light pink background */
+  color: #5b004b; /* Deep purple text */
+}
+
+.five .idea-5 {
+  font-size: 4rem;
+  color: #6b004f; /* Rich deep pink */
+}
+
+.idea-5 span,
+.idea-6 span,
+.wish-hbd span {
+  display: inline-block;
+  color: #6b004f; /* Rich deep pink */
+}
+
+.idea-6 span {
+  font-size: 15rem;
+}
+
+.six {
+  position: relative;
+  top: 10vh;
+  z-index: 1;
+}
+
+.six img {
+  display: inline-block;
+  height: 350px;
+  max-width: 100%;
+}
+
+.six .hat {
+  left: 41.5%;
+  position: absolute;
+  top: -35%;
+  width: 80px;
+}
+
+.baloons img {
+  display: inline-block;
+  position: absolute;
+}
+
+.baloons img:nth-child(even) {
+  left: -10%;
+}
+
+.baloons img:nth-child(odd) {
+  right: -10%;
+}
+
+.baloons img:nth-child(3n + 0) {
+  left: 30%;
+}
+
+.seven,
+.eight {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.eight svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 25px;
+  z-index: -1;
+}
+
+.eight svg:nth-child(1) {
+  fill: #ff99cc; /* Light pink */
+  left: 5vw;
+  top: 7vh;
+}
+
+.eight svg:nth-child(2) {
+  fill: #ff69b4; /* Vibrant pink */
+  left: 35vw;
+  top: 23vh;
+}
+
+.eight svg:nth-child(3) {
+  fill: #6b004f; /* Rich deep pink */
+  left: 23vw;
+  top: 33vh;
+}
+
+.eight svg:nth-child(4) {
+  fill: #800060; /* Purple */
+  left: 57vw;
+  top: 43vh;
+}
+
+.eight svg:nth-child(5) {
+  fill: #ffb3d9; /* Pale pink */
+  left: 7vw;
+  top: 68vh;
+}
+
+.eight svg:nth-child(6) {
+  fill: #800060; /* Purple */
+  left: 77vw;
+  top: 42vh;
+}
+
+.eight svg:nth-child(7) {
+  fill: #ffaad4; /* Light rose pink */
+  left: 83vw;
+  top: 68vh;
+}
+
+.eight svg:nth-child(8) {
+  fill: #ff69b4; /* Vibrant pink */
+  left: 37vw;
+  top: 86vh;
+}
+
+.eight svg:nth-child(9) {
+  fill: #ff99cc; /* Light pink */
+  left: 87vw;
+  top: 94vh;
+}
+
+.wish-hbd {
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+  color: #800060; /* Purple */
+}
+
+.wish h5 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 10px 0 0;
+  color: #6b004f; /* Rich deep pink */
+}
+
+.nine p {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #6b004f; /* Rich deep pink */
+}
+
+#replay {
+  cursor: pointer;
+  z-index: 3;
+  color: #800060; /* Purple */
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+
+  .four .text-box {
+    width: 90%;
+  }
+
+  .text-box .fake-btn {
+    bottom: -38px;
+    right: 5px;
+  }
+
+  .idea-5 span {
+    display: block;
+  }
+
+  .idea-6 span {
+    font-size: 10rem;
+  }
+
+  .six .hat {
+    width: 50px;
+  }
+
+  .wish-hbd {
+    font-size: 2.2em;
+  }
+
+  .wish h5 {
+    font-size: 1.4rem;
+  }
+
+  .nine p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+
+  
+}
